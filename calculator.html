@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="calculator.css">
+    <title>Calculator</title>
+    <style>
+        button{
+            color: aliceblue;
+        }
+
+        .btn-1{
+          background-color: #5C5C5F;  
+          padding: 16px;
+          width: 50px;
+          margin-left: 15px;
+          border-radius: 50%;
+          font-size: 20px;
+          border: none;
+          outline: none;
+        }
+
+        
+        .btn-1:hover{
+          background-color: #78787c;  
+          padding: 16px;
+          width: 50px;
+          margin-left: 15px;
+          border-radius: 50%;
+          font-size: 20px;
+          border: none;
+          outline: none;}
+
+          .btn-2:hover{
+          background-color: #fbb346;  
+          padding: 16px;
+          width: 50px;
+          margin-left: 15px;
+          border-radius: 50%;
+          font-size: 20px;
+          border: none;
+          outline: none;}
+
+        .btn-2{
+          background-color: #FF9F0A;  
+          padding: 16px;
+          width: 50px;
+          border-radius: 50%;
+          margin-left: 15px;
+          font-size: 20px;
+          border: none;
+          outline: none;
+        }
+        .btn-3{
+          background-color: #2A2A2C;  
+          padding: 16px;
+          width: 50px;
+          border-radius: 50%;
+          margin-left: 15px;
+          font-size: 20px;
+          border: none;
+          outline: none;
+        }
+
+        .btn-3:hover{
+          background-color: #3f3f43;  
+          padding: 16px;
+          width: 50px;
+          border-radius: 50%;
+          margin-left: 15px;
+          font-size: 20px;
+          border: none;
+          outline: none;
+        }
+    </style>
+</head>
+<body>
+    <h1>Hello world AC</h1>
+       <div style="width: 306px;background-color: black;height: 565px;border-radius: 20PX;margin-left: 600px;"> 
+        <div style="text-align: right;">
+            <input type="text" style="border: none;margin-top: 60px;padding: 20px;background-color: transparent;color: aliceblue;font-size: xx-large;text-align: end;width: 265px;outline: none;">
+
+        </div>
+        <div style="margin-left: 15px;">
+        <div>
+            <button onclick="clearinput()" class="btn-1">AC</button>
+            <button onclick="plusMinus()" class="btn-1">+/-</button>
+            <button onclick="Calculate(this)" class="btn-1">%</button>
+            <button onclick="Calculate(this)" class="btn-2">/</button>
+        </div>
+        <br>
+        <div>
+            <button onclick="buttonPressed(this)" class="btn-3">7</button>
+            <button onclick="buttonPressed(this)" class="btn-3">8</button>
+            <button onclick="buttonPressed(this)" class="btn-3">9</button>
+            <button onclick="Calculate(this)" class="btn-2">*</button>
+        </div>
+        <br>
+        <div>
+            <button onclick="buttonPressed(this)" class="btn-3">4</button>
+            <button onclick="buttonPressed(this)" class="btn-3">5</button>
+            <button onclick="buttonPressed(this)" class="btn-3">6</button>
+            <button onclick="Calculate(this)" class="btn-2">-</button>
+        </div>
+        <br>                            
+        <div>
+            <button onclick="buttonPressed(this)" class="btn-3">1</button>
+            <button onclick="buttonPressed(this)" class="btn-3">2</button>
+            <button onclick="buttonPressed(this)" class="btn-3">3</button>
+            <button onclick="Calculate(this)" class="btn-2">+</button>
+        </div>
+        <br>
+        <div>
+            <button onclick="buttonPressed(this)" class="btn-3"> <img width="15px" src="https://help.apple.com/assets/67B3DC69C33F63574F01B3A4/67B3DC6DC33F63574F01B3B0/en_US/9555d1077d17de8378ec8a0d53922dee.png" alt=""></button>
+            <button onclick="buttonPressed(this)" class="btn-3">0</button>
+            <button onclick="dot()" class="btn-3">.</button>
+            <button onclick="resultButton()" class="btn-2">=</button>
+        </div>
+    </div>
+</div>
+
+<div>
+    <h1>Operand 1: </h1>
+    <h1>Operand 2: </h1>
+    <h1>Operator: </h1>
+</div>
+
+    <script src="calculator.js">
+    </script>
+</body>
+</html>
+
